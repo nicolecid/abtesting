@@ -1,0 +1,55 @@
+/* Put your style information here! */
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav {
+    overflow: hidden;
+}
+
+.nav a {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav a.active {
+    background-color: rgb(171, 138, 211);
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    padding-bottom: 5%;
+    color: rgb(111, 72, 159);
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 5%;
+    color: rgb(111, 72, 159);
+}
+p {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    line-height: 30px;
+}
+h3 {
+    font-size: 20px;
+    padding-top: 5%;
+    color: rgb(58, 58, 58)
+}
