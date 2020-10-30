@@ -2,7 +2,7 @@ from scipy import stats
 from scipy.stats import t as t_dist
 from scipy.stats import chi2
 import math
-from abtesting_test import *
+#from abtesting_test import *
 
 # You can comment out these lines! They are just here to help follow along to the tutorial.
 #print(t_dist.cdf(-2, 20)) # should print .02963
@@ -239,13 +239,41 @@ def data_to_num_list(s):
     '''
   return list(map(float, s.split()))
 
+a1 = """6136
+19678
+7957
+0
+13903
+16551
+0
+93146
+11804
+7680
+5948"""
 
-## t_test 1:
-#a_t1_list = data_to_num_list(a1)
-#b_t1_list = data_to_num_list(b1)
-#print(get_t_score(a_t1_list, b_t1_list)) # this should be -129.500
-#print(perform_2_sample_t_test(a_t1_list, b_t1_list)) # this should be 0.0000
-## why do you think this is? Take a peek at a1 and b1 in abtesting_test.py :)
+b1 = """
+    93689
+    4028
+    7066
+    13351
+    17778
+    9516
+    21712
+    4294
+    24003
+    0
+    """
+
+a_count_1 = """4 8"""
+b_count_1 = """8 2"""
+
+
+# t_test 1:
+a_t1_list = data_to_num_list(a1)
+b_t1_list = data_to_num_list(b1)
+print(get_t_score(a_t1_list, b_t1_list)) # this should be -129.500
+print(perform_2_sample_t_test(a_t1_list, b_t1_list)) # this should be 0.0000
+# why do you think this is? Take a peek at a1 and b1 in abtesting_test.py :)
 #
 #
 ## t_test 2:
@@ -260,7 +288,7 @@ def data_to_num_list(s):
 #print(get_t_score(a_t3_list, b_t3_list)) # this should be -2.88969
 #print(perform_2_sample_t_test(a_t3_list, b_t3_list)) # this should be .005091
 
-"""
+
 # chi2_test 1:
 a_c1_list = data_to_num_list(a_count_1) 
 b_c1_list = data_to_num_list(b_count_1)
@@ -268,7 +296,7 @@ c1_observed_grid = [a_c1_list, b_c1_list]
 print(chi2_value(c1_observed_grid)) # this should be 4.103536
 print(perform_chi2_homogeneity_test(c1_observed_grid)) # this should be .0427939
 
-
+"""
 # chi2_test 2:
 a_c2_list = data_to_num_list(a_count_2) 
 b_c2_list = data_to_num_list(b_count_2)

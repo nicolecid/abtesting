@@ -53,3 +53,16 @@ h3 {
     padding-top: 5%;
     color: rgb(58, 58, 58)
 }
+h4 {
+    font-size: 15px;
+    color: rgb(58, 58, 58);
+    padding-top: 5%;
+}
+ul {
+    text-align: left;
+    text-decoration: none;
+    padding-left: 10%;
+    color:black;
+    line-height:30px;
+    padding-bottom: 5%;
+}
